@@ -27,72 +27,54 @@ $fecha = $_SESSION['created_at'];
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
-    <body id="page-top" style="background: url(&quot;assets/img/background@1.5x-8.png&quot;);background-size: cover;">
+    <body id="page-top" >
         <div class="row"></div>
         
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div class="card cardHome" style="background-image: url(&quot;assets/img/bkg-card.png&quot;);background-size: contain; background-position: bottom; background-repeat: no-repeat;">
-                    <div class="card-body" style="padding-top: 0px; padding-right: 0px;">
+        <div class="row mx-0">
+        <div class="offset-lg-1 col-lg-10 col-sm-12 ">
+                <div class="card cardHome">
+                    <div class="card-body mainCard" >
                         <div id="wrapper">
+                        <div class="menuLat notOpen ">
+                        <img class="burger m-4" src="assets/img/burger.png"> 
 
-                            <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: rgba(78,115,223,0);">
-                                <div class="container-fluid d-flex flex-column p-0">
-                                    <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="margin-top: 2rem;">
-                                    <div class="sidebar-brand-icon" style="text-align: center;">
-                                        <img class="img-fluid" src="assets/img/picture_profile.png" style="width: 72%;">
+                            <div class="container-fluid d-flex flex-column p-0">
+                                <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="margin-top: 2rem;">
+                                <div class="sidebar-brand-icon" style="text-align: center;">
+                                    <img class="img-fluid" src="assets/img/picture_profile.png" style="width: 72%;">
                                     <div class="sidebar-brand-text" style="padding-top: .72rem;">
-                                        <span style="color: rgb(0,0,0);">Usuario</span>
+                                    <span style="color: rgb(0,0,0);">Usuario</span>
                                     </div>
-                                    </div>
-                                    </a>
-                                    <hr class="sidebar-divider my-0" style="padding-top: 135px;">
-                                    <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                                    <!-- First item Menu -->
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-null" href="inicio.php">
-                                            <i class="fa fa-user-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Overview</span>
-                                        </a>
-                                    </li><li style="height: .5rem"></li>
-                                    <!-- Second item Menu -->
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-null" href="calendario.php">
-                                            <i class="fa fa-calendar-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Calendario</span>
-                                        </a>
-                                    </li><li style="height: .5rem"></li>
-                                    <!-- Third item Menu -->
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-active active" href="kardex.php">
-                                            <i class="fa fa-map-o"></i><span>Tu ruta de aprendizaje</span>
-                                        </a>
-                                    </li><li style="height: .5rem"></li>
-                                    <!-- Fourth item Menu -->
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-null" href="index.html" style="color: var(--gray);">
-                                            <i class="fa fa-star-o" style="color: var(--gray);"></i><span>Recomendaciones</span>
-                                        </a>
-                                    </li>
+                                </div>
+                                </a>
+                                <hr class="sidebar-divider my-0" style="padding-top: 135px;">
+                                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                                    <li class="nav-item"><a class="nav-link nav-null" href="inicio.php"><i class="fa fa-user-o" ></i><span >Overview</span></a></li> 
+                                    <li class="nav-item"><a class="nav-link nav-null " href="calendario.php"><i class="fa fa-calendar-o" ></i><span >Calendario</span></a></li>
+                                    <li class="nav-item"><a class="nav-link  nav-active active  " href="kardex.php"><i class="fa fa-map-o" ></i><span >Tu ruta de aprendizaje</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html"><i class="fa fa-star-o" ></i><span>Recomendaciones</span></a></li>
                                 </ul>
                                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
                             </div>
-                        </nav>
+                        </div>
 
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
-                                <img class="img-fluid" src="assets/img/banner_principal@1.5x-8.png" style="width: 100%; height: auto; margin-left: .2rem;">
+                                <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png" >
 
                                 <!-- First Section -->
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                        <h3 class="text-dark mb-0" style="font-size: 22px;color: #3e77c7!important;"> 
+                                        <h3 class="h3-title mb-0" > 
                                             <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Kardex
                                         </h3>
                                     </div><br>
 
                                     <!-- First row cards -->
-                                    <div class="row">
+                                    <div class="row mt-xl-4 d-flex align-items-center ">
                                         <!-- Card 1 -->
                                         <div class="col">
                                             <div class="card cardBody2 shadow py-2">
@@ -176,7 +158,7 @@ $fecha = $_SESSION['created_at'];
                                     <!-- End first row Cards -->
 
                                     <!-- Second row cards -->
-                                    <div class="row">
+                                    <div class="row mt-xl-4 d-flex align-items-center">
                                         <!-- Card 1 -->
                                         <div class="col">
                                             <div class="card cardBody2 shadow py-2">
@@ -260,7 +242,7 @@ $fecha = $_SESSION['created_at'];
                                     <!-- End first row Cards -->
 
                                     <!-- Third row cards -->
-                                    <div class="row">
+                                    <div class="row mt-xl-4 d-flex align-items-center">
                                         <!-- Card 1 -->
                                         <div class="col">
                                             <div class="card cardBody2 shadow py-2">
@@ -344,7 +326,7 @@ $fecha = $_SESSION['created_at'];
                                     <!-- End first row Cards -->
 
                                     <!-- Fourth row cards -->
-                                    <div class="row">
+                                    <div class="row mt-xl-4 d-flex align-items-center">
                                         <!-- Card 1 -->
                                         <div class="col">
                                             <div class="card cardBody2 shadow py-2">
@@ -440,7 +422,6 @@ $fecha = $_SESSION['created_at'];
             <div class="col-1"></div>
         </div>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>

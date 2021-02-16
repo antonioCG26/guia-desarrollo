@@ -46,14 +46,16 @@ $fecha = $_SESSION['created_at'];
         </script>
         <!-- Script JS Calendar -->
     </head>
-    <body id="page-top" style="background: url(&quot;assets/img/background@1.5x-8.png&quot;);background-size: cover;">
+    <body id="page-top" >
         <div class="row"></div>
         
-        <div class="row">
-            <div class="offset-lg-1 col-lg-10 col-sm-12 ">                <div class="card cardHome" style="background-image: url(&quot;assets/img/bkg-card.png&quot;);background-size: contain; background-position: bottom; background-repeat: no-repeat;">
-                    <div class="card-body" style="padding-top: 0px; padding-right: 0px;">
+        <div class="row mx-0">
+            <div class="offset-lg-1 col-lg-10 col-sm-12 ">  
+              <div class="card cardHome" >
+                  <div class="card-body mainCard" >
                         <div id="wrapper">
-                        <div class="col-lg-2  menuLat  ">
+                        <div class="menuLat notOpen  ">
+                        <img class="burger m-4" src="assets/img/burger.png">
                             <div class="container-fluid d-flex flex-column p-0">
                                     <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="margin-top: 2rem;">
                                     <div class="sidebar-brand-icon" style="text-align: center;">
@@ -65,48 +67,49 @@ $fecha = $_SESSION['created_at'];
                                     </a>
                                 <hr class="sidebar-divider my-0" style="padding-top: 135px;">
                                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                                    <li class="nav-item"><a class="nav-link nav-active active" href="inicio.php"><i class="fa fa-user-o"></i><span>Overview</span></a></li> <li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="calendario.php"><i class="fa fa-calendar-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Calendario</span></a></li><li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="kardex.php"><i class="fa fa-map-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Tu ruta de aprendizaje</span></a></li><li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html" style="color: var(--gray);"><i class="fa fa-star-o" style="color: var(--gray);"></i><span>Recomendaciones</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="inicio.php"><i class="fa fa-user-o" ></i><span >Overview</span></a></li> 
+                                    <li class="nav-item"><a class="nav-link nav-active active  " href="calendario.php"><i class="fa fa-calendar-o" ></i><span >Calendario</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="kardex.php"><i class="fa fa-map-o" ></i><span >Tu ruta de aprendizaje</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html"><i class="fa fa-star-o" ></i><span>Recomendaciones</span></a></li>
                                 </ul>
                                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                          </div>
                         </div>
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
-                                <img class="img-fluid" src="assets/img/banner_principal@1.5x-8.png" style="width: 100%; height: auto; margin-left: .2rem;">
+                                <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png" >
 
                                 <!-- First Section -->
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                       <img class="img-fluid" src="assets/img/calendario/banner.gif" style="width: 100%;">
+                                       <img class="img-fluid " src="assets/img/calendario/banner.gif" style="width: 100%;">
                                     </div><br>
 
                                     <!-- First row cards -->
                                     <div class="row">
                                         <!-- Card 1 -->
-                                        <div class="col-md-7 col-xl-7 mb-7">
+                                        <div class="col-md-7 col-xl-7 col-12 mb-7">
                                             <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                                <h3 class="text-dark mb-0" style="font-size: 22px;color: #3e77c7!important;"> <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Calendario de Cursos</h3>
+                                                <h3 class="h3-title mb-0" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Calendario de Cursos</h3>
                                             </div><br>
                                             <div class="card cardCalendar">
-                                                <div class="card-body">
+                                                <div class="card-body px-0">
                                                     <div id='calendar'></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Card 2 -->
-                                        <div class="col-md-5 col-xl-5 mb-5">
+                                        <div class="col-md-5 col-xl-5 col-12 mb-5">
                                             <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                                <h3 class="text-dark mb-0" style="font-size: 22px;color: #3e77c7!important;"> <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Eventos del mes</h3>
+                                                <h3 class="h3-title mb-0" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Eventos del mes</h3>
                                             </div><br>
                                             <!-- Card Button 1 -->
-                                            <div class="card mb-2">
+                                            <div class="card shadow mb-2">
                                               <div class="row no-gutters">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-3">
                                                   <img src="assets/img/calendario/Asset 43@1.5x-8.png" class="card-img" alt="...">
                                                 </div>
-                                                <div class="col-md-9">
+                                                <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
                                                     <p class="card-title">Comunicación interpersonal</p>
                                                     <p class="card-text" style="color: #7a56ff">26 de Abril</p>
@@ -116,12 +119,12 @@ $fecha = $_SESSION['created_at'];
                                               </div>
                                             </div>
                                             <!-- Card Button 1 -->
-                                            <div class="card mb-2">
+                                            <div class="card shadow mb-2">
                                               <div class="row no-gutters">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-3">
                                                   <img src="assets/img/calendario/Asset 44@1.5x-8.png" class="card-img" alt="...">
                                                 </div>
-                                                <div class="col-md-9">
+                                                <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
                                                     <p class="card-title">Comunicación interpersonal</p>
                                                     <p class="card-text" style="color: #7a56ff">26 de Abril</p>
@@ -131,12 +134,12 @@ $fecha = $_SESSION['created_at'];
                                               </div>
                                             </div>
                                             <!-- Card Button 1 -->
-                                            <div class="card mb-2">
+                                            <div class="card shadow mb-2">
                                               <div class="row no-gutters">
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-3">
                                                   <img src="assets/img/calendario/Asset 45@1.5x-8.png" class="card-img" alt="...">
                                                 </div>
-                                                <div class="col-md-9">
+                                                <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
                                                     <p class="card-title">Comunicación interpersonal</p>
                                                     <p class="card-text" style="color: #7a56ff">26 de Abril</p>
@@ -156,8 +159,11 @@ $fecha = $_SESSION['created_at'];
                             </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
                         </div>
                     </div>
-                </div>
+                
+                
+              </div>  
             </div>
+        </div>
         </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

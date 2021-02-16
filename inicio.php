@@ -27,43 +27,46 @@ $fecha = $_SESSION['created_at'];
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
-    <body id="page-top" style="background: url(&quot;assets/img/background@1.5x-8.png&quot;);background-size: cover;">
+    <body id="page-top" >
         
-        <div class="row">
-            <div class="offset-lg-1 col-lg-10 col-sm-12 ">
-                <div class="card cardHome" style="background-image: url(&quot;assets/img/bkg-card.png&quot;);background-size: contain; background-position: bottom; background-repeat: no-repeat;">
-                    <div class="card-body mainCard"  >
-                        <div id="wrapper">
-                        <div class="col-lg-2  menuLat  ">
-                        <div class="container-fluid d-flex flex-column p-0">
-                                    <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="margin-top: 2rem;">
-                                    <div class="sidebar-brand-icon" style="text-align: center;">
-                                        <img class="img-fluid" src="assets/img/picture_profile.png" style="width: 72%;">
+        <div class="row mx-0">
+            <div class="cardpage col-xl-10 col-lg-12 col-sm-12 mx-auto ">
+                <div class="card cardHome " >
+                <div class="  menuLat notOpen  ">
+                        <img class="burger m-4" src="assets/img/burger.png">
+                            <div class="container-fluid d-flex flex-column p-0">
+                                <a class="navbar-brand d-flex justify-content-center align-items-center" href="#" style="margin-top: 2rem;">
+                                <div class="sidebar-brand-icon" style="text-align: center;">
+                                    <img class="img-fluid" src="assets/img/picture_profile.png" style="width: 72%;">
                                     <div class="sidebar-brand-text" style="padding-top: .72rem;">
-                                        <span style="color: rgb(0,0,0);">Usuario</span>
+                                    <span style="color: rgb(0,0,0);">Usuario</span>
                                     </div>
-                                    </div>
-                                    </a>
+                                </div>
+                                </a>
                                 <hr class="sidebar-divider my-0" style="padding-top: 135px;">
                                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                                    <li class="nav-item"><a class="nav-link nav-active active" href="inicio.php"><i class="fa fa-user-o"></i><span>Overview</span></a></li> <li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="calendario.php"><i class="fa fa-calendar-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Calendario</span></a></li><li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="kardex.php"><i class="fa fa-map-o" style="color: var(--gray);"></i><span style="color: var(--gray);">Tu ruta de aprendizaje</span></a></li><li style="height: .5rem"></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html" style="color: var(--gray);"><i class="fa fa-star-o" style="color: var(--gray);"></i><span>Recomendaciones</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-active active" href="inicio.php"><i class="fa fa-user-o" ></i><span >Overview</span></a></li> 
+                                    <li class="nav-item"><a class="nav-link nav-null " href="calendario.php"><i class="fa fa-calendar-o" ></i><span >Calendario</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="kardex.php"><i class="fa fa-map-o" ></i><span >Tu ruta de aprendizaje</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html"><i class="fa fa-star-o" ></i><span>Recomendaciones</span></a></li>
                                 </ul>
                                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
                             </div>
                         </div>
+                    <div class="card-body mainCard"  >
+                    
+                        <div id="wrapper">
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
-                                <img class="burger m-4" src="assets/img/close.png">
                                 <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
 
                                 <!-- First Section -->
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                       <h3 class="text-dark mb-0" style="font-size: 22px;color: #3e77c7!important;"> <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Overview</h3>
+                                       <h3 class=" h3-title mb-0" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Overview</h3>
                                     </div><br>
 
                                     <!-- First row cards -->
@@ -73,10 +76,10 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card cardBody1 shadow py-2" style="background-color: #d6e9f5">
                                                 <div class="card-body cardBodyStyle">
                                                     <h5 class="card-title cardTitle1">Puntos Alcanzados</h5>
-                                                    <div class="row align-items-center no-gutters">
-                                                        <div class="col" style="text-align: left; font-size: 26px; color: #038FEF">
-                                                            <img style="width: 27%" src="assets/img/Card1Icon1.png">
-                                                            <span>350pt</span>
+                                                    <div class="row no-gutters">
+                                                        <div class="col d-flex justify-content-center" style="text-align: left; font-size: 26px; color: #038FEF">
+                                                            <img class="icon-overview mr-3" src="assets/img/Card1Icon1.png">
+                                                            <span id="alcanzados">350 pt</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -87,12 +90,12 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card cardBody1 shadow py-2" style="background-color: #d7f6e2">
                                                 <div class="card-body cardBodyStyle">
                                                     <h5 class="card-title cardTitle1">Ingredientes obtenidos</h5>
-                                                    <div class="row align-items-center no-gutters">
-                                                        <div class="col-auto" style="text-align: center;">
-                                                            <img style="width: 20%" src="assets/img/Card2Icon1.png">
-                                                            <img style="width: 20%" src="assets/img/Card2Icon2.png">
-                                                            <img style="width: 20%" src="assets/img/Card2Icon3.png">
-                                                            <img style="width: 20%" src="assets/img/Card2Icon4.png">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-auto d-flex justify-content-center" style="text-align: center;">
+                                                            <img class="icon-overview mx-1" src="assets/img/Card2Icon1.png">
+                                                            <img class="icon-overview mx-1" src="assets/img/Card2Icon2.png">
+                                                            <img class="icon-overview mx-1" src="assets/img/Card2Icon3.png">
+                                                            <img class="icon-overview mx-1" src="assets/img/Card2Icon4.png">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -103,10 +106,10 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card cardBody1 shadow py-2" style="background-color: #f4f0ff">
                                                 <div class="card-body cardBodyStyle">
                                                     <h5 class="card-title cardTitle1">Certificados</h5>
-                                                    <div class="row align-items-center no-gutters">
-                                                        <div class="col" style="text-align: left; font-size: 26px; color: #038FEF">
-                                                            <img style="width: 45%" src="assets/img/Card3Icon1.png">
-                                                            <span>4</span>
+                                                    <div class="row  no-gutters">
+                                                        <div class="col d-flex justify-content-center" style="text-align: left; font-size: 26px; color: #038FEF">
+                                                            <img class="icon-overview mr-3" src="assets/img/Card3Icon1.png">
+                                                            <span id="certificados">4</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,14 +123,14 @@ $fecha = $_SESSION['created_at'];
                                 <!-- Second Section -->
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                        <h3 class="text-dark mb-0 pb-4" style="font-size: 22px;color: #3e77c7!important;"> <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Avance por Pilar</h3>
+                                        <h3 class=" h3-title mb-0 pb-4" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Avance por Pilar</h3>
                                     </div><br>
 
                                     <!-- First row cards -->
                                     <div class="row">
                                         <!-- Card 1 -->
-                                        <div class="col-md-3 col-xl-3 mb-3">
-                                            <div class="card cardBody2 shadow py-2">
+                                        <div class="mx-auto col-xl-3 col-md-5 col-sm-6  col-12 mb-3 mt-md-5 mt-4">
+                                            <div class="card cardBody2 shadow py-2 mt-3">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
                                                 <img src="assets/img/gif/1.gif" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyS2">
@@ -150,8 +153,8 @@ $fecha = $_SESSION['created_at'];
                                             </div>
                                         </div>
                                         <!-- Card 2 -->
-                                        <div class="col-md-3 col-xl-3 mb-3">
-                                            <div class="card cardBody2 shadow py-2">
+                                        <div class="mx-auto col-xl-3 col-md-5 col-sm-6  col-12 mb-3 mt-md-5 mt-4">
+                                            <div class="card cardBody2 shadow py-2 mt-3">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
                                                 <img src="assets/img/gif/2.gif" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyS2">
@@ -174,8 +177,8 @@ $fecha = $_SESSION['created_at'];
                                             </div>
                                         </div>
                                         <!-- Card 3 -->
-                                        <div class="col-md-3 col-xl-3 mb-3">
-                                            <div class="card cardBody2 shadow py-2">
+                                        <div class="mx-auto col-xl-3 col-md-5 col-sm-6  col-12 mb-3 mt-md-5 mt-4">
+                                            <div class="card cardBody2 shadow py-2 mt-3">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
                                                 <img src="assets/img/gif/3.gif" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyS2">
@@ -198,8 +201,8 @@ $fecha = $_SESSION['created_at'];
                                             </div>
                                         </div>
                                         <!-- Card 4 -->
-                                        <div class="col-md-3 col-xl-3 mb-3">
-                                            <div class="card cardBody2 shadow py-2">
+                                        <div class="mx-auto col-xl-3 col-md-5 col-sm-6  col-12 mb-3 mt-md-5 mt-4">
+                                            <div class="card cardBody2 shadow py-2 mt-3">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
                                                 <img src="assets/img/gif/4.gif" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyS2">
@@ -229,7 +232,7 @@ $fecha = $_SESSION['created_at'];
                                 <!-- Third Section -->
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                                        <h3 class="text-dark mb-0" style="font-size: 22px;color: #3e77c7!important;"> <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Historial de avance</h3>
+                                        <h3 class=" h3-title mb-0" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Historial de avance</h3>
                                     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                                     <!-- First row cards -->
@@ -255,7 +258,6 @@ $fecha = $_SESSION['created_at'];
         
         </div>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>

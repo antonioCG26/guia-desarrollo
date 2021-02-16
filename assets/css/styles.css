@@ -1,11 +1,28 @@
 body {
     color: black;
+    overflow:hidden;
+    height: 100vh;
+}
+::-webkit-scrollbar {display: none;}
+#page-top{
+    background: url("../img/background@1.5x-8.png");
+    background-size: cover;
+}
+
+#wrapper{
+    height: 100vh;
 }
 
 #wrapper #content-wrapper {
     background-color: transparent;
     width: 100%;
     overflow-x: hidden;
+}
+#content{
+    background-image: url("../img/bkg-card.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .cardHome {
@@ -21,19 +38,82 @@ body {
     border-top-left-radius: 80px;
     border-top-right-radius: 80px ;
     margin-top: 2rem; 
-    background-image: url(../assets/img/bkg-card.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
     overflow-x: hidden;
-
+    height: 100vh;
 }
+.menuLat{
+    background-color: white;
+    padding: 0px 0px;
+    width: 300px;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    background-color: rgba(255,255,255);
+}
+.menuLat.open{
+    margin-left: 0px;
+    transition: all ease-out 1s;
+}
+.menuLat.notOpen{
+    margin-left: -300px;
+    transition: all ease-out 1s;
+}
+
+
 .burger{
     position: absolute;
+    right: -90px;
     width: 40px;
     filter:invert(100%);
 }
 
+
+.nav-item{
+   margin: 3px 0px;
+   height: 60px;
+}
+.nav-item >a{
+    height: 100%;
+}
+.nav-link > i{
+    font-size: 20px;
+    color:gray;
+    font-weight: 600;
+    width: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.nav-link.active > i{
+    color:white;
+}
+.nav-link>span{
+    font-size: 15px;
+    font-weight: 800;
+}
+.nav-link.active > span{
+    color:white;
+}
+.h3-title{
+    color:#3e77c7;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.icon-overview{
+    width:50px;
+    
+}
+#alcanzados{
+    color: rgb(36, 125, 241);
+    font-weight: 900;
+    font-size: 30px
+}
+#certificados{
+    color: rgb(84, 29, 185);
+    font-weight: 900;
+    font-size: 30px
+}
 .cardBody1 {
     position: relative;
     display: flex;
@@ -45,7 +125,7 @@ body {
     border: 1px solid #e3e6f0;
     border-radius: 1rem;
     height: 90%;
-    padding: 0px!important;
+    padding: 0px 0px 10px 0px!important;
     margin: 0px!important;
     align-items: center;
 }
@@ -71,7 +151,9 @@ body {
 }
 .banner_principal{
     width: 100%; 
-    height: auto
+    height: auto;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
 
 .cardBodyStyle {
@@ -82,16 +164,19 @@ body {
 }
 
 .gifCard {
-  width: 45%;
+  width: 35%;
   border-radius: 72px;
   align-self: center;
   margin-top: -25%;
   margin-bottom: -5%;
+  min-width: 120px;
 }
 
 .cardTitle {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
+    color: rgb(128, 1, 54);
+    font-weight: 700;
 }
 
 .cardTitle2 {
@@ -100,8 +185,8 @@ body {
 }
 
 .cardTitle1 {
-    font-size: 12px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
 }
 
 .nav-active {
@@ -109,17 +194,6 @@ body {
     border-right-color: gray; 
     border-right-width: .5rem; 
     border-right-style: inset;
-}
-.menuLat{
-    background-color: white;
-}
-.menuLat.open{
-    margin-left: 0px;
-    transition: all ease-out 1s;
-}
-.menuLat.notOpen{
-    margin-left: -245px;
-    transition: all ease-out 1s;
 }
 
 .nav-null {
@@ -190,3 +264,16 @@ body {
     padding: .5rem;
     width: -webkit-fill-available;
 }
+
+
+@media (min-width: 576px) { ... }
+
+@media (min-width: 768px) { ... }
+
+@media (min-width: 992px) { 
+    
+
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 1400px) { ... }

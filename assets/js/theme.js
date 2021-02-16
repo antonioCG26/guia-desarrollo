@@ -45,7 +45,7 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
-  var SidemenuStatus = "open";
+  var SidemenuStatus = "close";
 
   $(".burger").on("click", function SideMenu(){
     if(SidemenuStatus=="open"){

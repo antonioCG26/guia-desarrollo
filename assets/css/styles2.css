@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Barlow Semi Condensed;
+  src: url(/assets/fonts/Barlow/BarlowSemiCondensed-Regular.ttf);
+}
+
+body, html { width: 100%; height: 100%; }
+
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: normal;
+}
+
+.dropdown-menu>a:hover {
+  color: #FFB042;
+  background-image: none;
+}
+
+.dropdown-menu>a:focus {
+  background-color: #F0ECFC;
+  background-image: none;
+}
+
+.main-content{
+	margin: 9em auto;
+	display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 18px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.input-group-text {
+	background-color: white;
+}
+
+
+.btn {  
+  /*background: rgb(120,0,222);
+  background: linear-gradient(80deg, rgba(120,0,222,1) 0%, rgba(103,0,226,1) 59%, rgba(30,0,240,1) 100%);*/
+  background: rgb(122,0,222);
+  background: linear-gradient(165deg, rgba(122,0,222,1) 0%, rgba(99,0,227,1) 59%, rgba(30,0,240,1) 100%);
+  color: white;
+}
+
+.btn:hover {  
+  background: rgb(118,0,223);
+  background: linear-gradient(90deg, rgba(118,0,223,1) 0%, rgba(122,0,222,1) 35%, rgba(122,0,222,1) 100%);
+  color: white;
+}
+
+.button2 {
+  border-radius: 18px;
+  width: 15rem;
+}
+
+.already {
+	font-size: .7rem;
+  color: white;
+}
+

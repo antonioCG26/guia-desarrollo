@@ -1,0 +1,192 @@
+body {
+    color: black;
+}
+
+#wrapper #content-wrapper {
+    background-color: transparent;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cardHome {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px!important;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px ;
+    margin-top: 2rem; 
+    background-image: url(../assets/img/bkg-card.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+.burger{
+    position: absolute;
+    width: 40px;
+    filter:invert(100%);
+}
+
+.cardBody1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 1rem;
+    height: 90%;
+    padding: 0px!important;
+    margin: 0px!important;
+    align-items: center;
+}
+
+.cardBody2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.cardBodyS2 {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    width: -webkit-fill-available;
+}
+.banner_principal{
+    width: 100%; 
+    height: auto
+}
+
+.cardBodyStyle {
+    padding: 9px!important;
+}
+.mainCard{
+    padding: 0px;
+}
+
+.gifCard {
+  width: 45%;
+  border-radius: 72px;
+  align-self: center;
+  margin-top: -25%;
+  margin-bottom: -5%;
+}
+
+.cardTitle {
+    font-size: 12px;
+    text-align: center;
+}
+
+.cardTitle2 {
+    font-size: 9px;
+    text-align: left;
+}
+
+.cardTitle1 {
+    font-size: 12px;
+    text-align: left;
+}
+
+.nav-active {
+    background: #7a56ff; 
+    border-right-color: gray; 
+    border-right-width: .5rem; 
+    border-right-style: inset;
+}
+.menuLat{
+    background-color: white;
+}
+.menuLat.open{
+    margin-left: 0px;
+    transition: all ease-out 1s;
+}
+.menuLat.notOpen{
+    margin-left: -245px;
+    transition: all ease-out 1s;
+}
+
+.nav-null {
+    background: rgba(122,86,255,0); 
+    color: var(--gray);
+    border-right-color: black; 
+    border-right-width: .5rem; 
+    border-right-style: inset;
+}
+
+.cardBodyCalendar {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .25rem;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.25rem;
+}
+
+.btnCalendar {  
+  background-color: #7a56ff;
+  color: white;
+  border-radius: 18px;
+  width: 6rem;
+}
+
+.cardCalendar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: unset;
+    border-radius: revert;
+}
+
+.gifCardHeader {
+  width: 63%;
+  border-radius: 72px;
+  align-self: center;
+  margin-top: -27%;
+  margin-bottom: -5%;
+}
+
+.cardTitleHeader {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #5e013b;
+}
+
+.cardBodyKardex {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding-top: 2.3rem;
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+    padding-right: .5rem;
+    width: -webkit-fill-available;
+}
+
+.cardBodyKardex2 {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .5rem;
+    width: -webkit-fill-available;
+}

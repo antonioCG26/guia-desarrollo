@@ -28,6 +28,7 @@ $fecha = $_SESSION['created_at'];
         <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     </head>
     <body id="page-top" >
@@ -51,7 +52,7 @@ $fecha = $_SESSION['created_at'];
                                     <li class="nav-item"><a class="nav-link nav-active active" href="inicio.php"><i class="fa fa-user-o" ></i><span >Overview</span></a></li> 
                                     <li class="nav-item"><a class="nav-link nav-null " href="calendario.php"><i class="fa fa-calendar-o" ></i><span >Calendario</span></a></li>
                                     <li class="nav-item"><a class="nav-link nav-null " href="kardex.php"><i class="fa fa-map-o" ></i><span >Tu ruta de aprendizaje</span></a></li>
-                                    <li class="nav-item"><a class="nav-link nav-null " href="index.html"><i class="fa fa-star-o" ></i><span>Recomendaciones</span></a></li>
+                                    <li class="nav-item"><a class="nav-link nav-null " href="recomendaciones.php"><i class="fa fa-star-o" ></i><span>Recomendaciones</span></a></li>
                                 </ul>
                                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
                             </div>
@@ -61,7 +62,15 @@ $fecha = $_SESSION['created_at'];
                         <div id="wrapper">
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
-                                <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
+                                <div >
+                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
+                                    <div class="saludoName mx-auto ">
+                                        <h1 class="text-center" >hola jessica</h1>
+                                        <p class="text-center">Tienes <b>2</b> cursos pendientes por finalizar,<br> mantente en el camino que te lleve a lograr tus metas</p>
+
+                                    </div>
+                                   
+                                </div>
 
                                 <!-- First Section -->
                                 <div class="container-fluid"><br>
@@ -233,10 +242,13 @@ $fecha = $_SESSION['created_at'];
                                 <div class="container-fluid"><br>
                                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
                                         <h3 class=" h3-title mb-0" > <i class="fa fa-chevron-right" aria-hidden="true" style="color: #5e013b"></i> Historial de avance</h3>
-                                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    </div>
 
                                     <!-- First row cards -->
-                                    <div class="row">
+                                    <div class="row h-100 ">
+                                    <div id="curve_chart" style="width:100%;height:400px"></div>
+                                    
+
                                     </div>
                                     <!-- End first row Cards -->
                                 </div>
@@ -261,5 +273,6 @@ $fecha = $_SESSION['created_at'];
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
         <script src="assets/js/theme.js"></script>
+        <script src="assets/js/chart.js"></script>
     </body>
 </html>

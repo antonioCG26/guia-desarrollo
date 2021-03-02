@@ -5,15 +5,15 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable
-  ([['X', 'Y', {'type': 'string', 'role': 'tooltip', 'p': {'html': true}}],
-    ['JAN', 3, createCustomHTMLContent('hola mi nombre es antonio amigo')],
-    ['FEB', 2.5, createCustomHTMLContent('hola amigo')],
-    ['MAR', 3, createCustomHTMLContent('hola amigo')],
-    ['APR', 4, createCustomHTMLContent('hola amigo')],
-    ['MAY', 4, createCustomHTMLContent('hola amigo')],
-    ['JUN', 3, createCustomHTMLContent('hola amigo')],
-    ['JUL', 2.5, createCustomHTMLContent('hola amigo')],
-    ['AGO', 3, createCustomHTMLContent('hola amigo')]
+  ([['date', 'Y', {'type': 'string', 'role': 'tooltip', 'p': {'html': true}}],
+    ['ENE', 2, createCustomHTMLContent('comunicacion personal 1','enero 12','assets/img/Card2Icon1.png','MALTA')],
+    ['FEB', 1, createCustomHTMLContent('comunicacion personal 2','febrero 14','assets/img/Card2Icon2.png','LUPULO')],
+    ['MAR', 3, createCustomHTMLContent('comunicacion personal 3','marzo 21','assets/img/Card2Icon3.png','AGUA')],
+    ['ABR', 3, createCustomHTMLContent('comunicacion personal 4','abril 13','assets/img/Card2Icon1.png','MALTA')],
+    ['MAY', 2, createCustomHTMLContent('comunicacion personal 5','mayo 24','assets/img/Card2Icon4.png','FRASCO')],
+    ['JUN', 1, createCustomHTMLContent('comunicacion personal 6','junio 2','assets/img/Card2Icon3.png','AGUA')],
+    ['JUL', 3, createCustomHTMLContent('comunicacion personal 7','julio 29','assets/img/Card2Icon4.png','FRASCO')],
+    ['AGO', 4, createCustomHTMLContent('comunicacion personalb 8','agosto 26','assets/img/Card2Icon3.png','AGUA')]
 ]);
   var options = {
     curveType: 'function',
@@ -43,6 +43,15 @@ function drawChart() {
   chart.draw(data, options);
 }
 
-function createCustomHTMLContent(hola2) {
-    return '<div>'+hola2+'</div>';
+function createCustomHTMLContent(curso,fecha,imgIngrediente,ingrediente) {
+    return '<div class=" p-2 coursediv" >'+
+            '<p class="courseName my-0">'+curso+'</p>'+
+            '<p class="courseDate my-0">'+fecha+'</p>'+
+            '<div class="row ">'+
+              '<div class="col-3"><img class="courseCert" src="assets/img/Card3Icon1.png"></div>'+
+              '<div class="col-9 "><p class="py-2">Certificado Obtenido </p></div>'+
+              '<div class="col-3"><img class="courseCert" src="'+imgIngrediente+'"></div>'+
+              '<div class="col-9 "><p class="py-2">Ingredientes ganados<br>'+ingrediente+' </p></div>'+
+            '</div>'+
+           '</div>';
     }

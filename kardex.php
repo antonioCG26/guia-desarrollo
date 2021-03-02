@@ -64,9 +64,9 @@ $fecha = $_SESSION['created_at'];
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
                             <div >
-                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
+                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@4x-8.png">
                                     <div class="saludoName mx-auto ">
-                                        <h1 class="text-center" >hola jessica</h1>
+                                        <h1 class="text-center" >Hola Jessica</h1>
                                         <p class="text-center">Tienes <b>2</b> cursos pendientes por finalizar,<br> mantente en el camino que te lleve a lograr tus metas</p>
 
                                     </div>
@@ -120,7 +120,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 55@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_obligatorios.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -140,7 +140,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 56@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/mandatorios_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -160,7 +160,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 57@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/optativos_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -204,7 +204,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 55@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_obligatorios.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -224,7 +224,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 56@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/mandatorios_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -244,7 +244,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 57@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/optativos_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -288,7 +288,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 55@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_obligatorios.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -308,7 +308,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 56@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/mandatorios_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -328,7 +328,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 57@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/optativos_icon.png" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -372,7 +372,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 55@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_obligatorios.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -392,7 +392,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 56@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_mandatorios.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">
@@ -412,7 +412,7 @@ $fecha = $_SESSION['created_at'];
                                         <div class="columnas mx-1 ">
                                             <div class="card cardBody2 shadow py-2">
                                                 <a href="#" style="margin-left: 81%;"><i class="fa fa-ellipsis-v text-gray-500" aria-hidden="true"></i></a>
-                                                <img src="assets/img/kardex/Asset 57@1.5x-8.png" class="card-img-top gifCard" alt="...">
+                                                <img src="assets/img/kardex/ico_optativos.svg" class="card-img-top gifCard" alt="...">
                                                 <div class="card-body cardBodyKardex">
                                                     <div class="row align-items-center no-gutters">
                                                         <div class="col mr-1">

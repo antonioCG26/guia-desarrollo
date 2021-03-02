@@ -34,7 +34,7 @@ $fecha = $_SESSION['created_at'];
     <body id="page-top" >
         
         <div class="row mx-0">
-            <div class="cardpage col-xl-10 col-lg-12 col-sm-12 mx-auto ">
+            <div class="offset-lg-1 col-lg-10 col-sm-12 ">  
                 <div class="card cardHome " >
                 <div class="  menuLat notOpen  ">
                         <img class="burger m-4" src="assets/img/burger.png">
@@ -63,9 +63,9 @@ $fecha = $_SESSION['created_at'];
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
                                 <div >
-                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
+                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@4x-8.png">
                                     <div class="saludoName mx-auto ">
-                                        <h1 class="text-center" >hola jessica</h1>
+                                        <h1 class="text-center" >Hola Jessica</h1>
                                         <p class="text-center">Tienes <b>2</b> cursos pendientes por finalizar,<br> mantente en el camino que te lleve a lograr tus metas</p>
 
                                     </div>

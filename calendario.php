@@ -78,9 +78,9 @@ $fecha = $_SESSION['created_at'];
                         <div class="d-flex flex-column" id="content-wrapper">
                             <div id="content">
                             <div >
-                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@1.5x-8.png">
+                                    <img class="img-fluid banner_principal" src="assets/img/banner_principal@4x-8.png">
                                     <div class="saludoName mx-auto ">
-                                        <h1 class="text-center" >hola jessica</h1>
+                                        <h1 class="text-center" >Hola Jessica</h1>
                                         <p class="text-center">Tienes <b>2</b> cursos pendientes por finalizar,<br> mantente en el camino que te lleve a lograr tus metas</p>
 
                                     </div>
@@ -114,7 +114,7 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card shadow mb-2">
                                               <div class="row no-gutters">
                                                 <div class="col-md-3 col-3">
-                                                  <img src="assets/img/calendario/Asset 43@1.5x-8.png" class="card-img" alt="...">
+                                                  <img src="assets/img/calendario/icono_elearning.svg" class="card-img" alt="...">
                                                 </div>
                                                 <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
@@ -129,7 +129,7 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card shadow mb-2">
                                               <div class="row no-gutters">
                                                 <div class="col-md-3 col-3">
-                                                  <img src="assets/img/calendario/Asset 44@1.5x-8.png" class="card-img" alt="...">
+                                                  <img src="assets/img/calendario/icono_webinar.svg" class="card-img" alt="...">
                                                 </div>
                                                 <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
@@ -144,7 +144,7 @@ $fecha = $_SESSION['created_at'];
                                             <div class="card shadow mb-2">
                                               <div class="row no-gutters">
                                                 <div class="col-md-3 col-3">
-                                                  <img src="assets/img/calendario/Asset 45@1.5x-8.png" class="card-img" alt="...">
+                                                  <img src="assets/img/calendario/icono_presencial.svg" class="card-img" alt="...">
                                                 </div>
                                                 <div class="col-md-9 col-9">
                                                   <div class="card-body cardBodyCalendar">
